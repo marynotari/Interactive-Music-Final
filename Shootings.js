@@ -1,5 +1,8 @@
 // Put all shootings data into an Array
-// Include a CHORD element
+// Data from: https://www.motherjones.com/politics/2012/12/mass-shootings-mother-jones-full-data/
+// CHORD element added
+// Chords are transcribed from the vocal parts of "Dies Irae" from Mozart's "Requiem"
+// See sheet music reference here: http://www.free-scores.com/download-sheet-music.php?pdf=15184
 
 let Shootings = [{
   CASE: "Welding shop shooting",
