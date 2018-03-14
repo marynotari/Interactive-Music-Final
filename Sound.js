@@ -20,10 +20,8 @@ var synth = new Tone.PolySynth({
 
 // DEFINE A CALLBACK TO DETERMINE WHAT THE SOUND WILL BE
 function callbackFunction(time, value) {
-  // event
-
   // CALCULATE THE INTERVAL BETWEEN FIRST AND SECOND PART
-  // IF WE'RE ON THE FIRST OBJECT OF THE SHOOTINGS ARRRAY...
+  // IF WE'RE ON THE FIRST OBJECT OF THE SHOOTINGS ARRRAY AS DETERMINED BY THE VALUE IN "FAT"...
   if (value.FAT == 8) {
     //     ...THEN START THE SECOND PART
     let msFromNowWhenNextPartShouldStart = value.nextTime - value.time * 1000;
@@ -76,7 +74,7 @@ var shootEventsMain = new Tone.Part(optionsMain);
 // 	shootEventsMain.start();
 // }
 
-// THE ORIGINAL, WE SPLIT IT UP WHEN WE COULDN'T FIGURE OUT HOW TO LOOP ONLY PART OF IT
+// THE ORIGINAL IDEA, WE SPLIT IT UP WHEN WE COULDN'T FIGURE OUT HOW TO LOOP ONLY PART OF IT
 // var shootEvents1 = new Tone.Part(function(time, value) {
 //   // event
 
